@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Clipper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ユーザーアイコン -->
+<div id="user-info" hidden>
+  <img id="user-photo">
+</div>
+
+<!-- 🔐 Login -->
+<section id="view-login">
+  <h2>Login</h2>
+  <input id="email" placeholder="email">
+  <input id="password" type="password">
+  <button id="login">Login</button>
+  <button id="signup">Sign up</button>
+
+  <button id="google-login" class="google-btn">
+    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+    Sign in with Google
+  </button>
+</section>
+
+<!-- 📂 List -->
+<section id="view-list" hidden>
+  <h2>Memos</h2>
+  <button id="new-memo">＋ New memo</button>
+  <ul id="memo-list"></ul>
+  <button id="logout">Logout</button>
+</section>
+
+<!-- ✏️ Editor -->
+<section id="view-editor" hidden>
+  <div class="editor-header">
+    <button id="back">← Back</button>
+    <button id="delete">🗑 Delete</button>
+  </div>
+
+  <input id="title" placeholder="Title">
+  <div id="editor" contenteditable="true"></div>
+</section>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
